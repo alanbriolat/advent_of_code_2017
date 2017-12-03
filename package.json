@@ -1,8 +1,10 @@
 {
   "name": "advent_of_code_2017",
   "version": "0.1.0",
+  "homepage": "https://alanbriolat.github.io/advent_of_code_2017",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-collapsible": "^2.0.3",
     "react-dom": "^16.2.0",
@@ -12,6 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
